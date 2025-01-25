@@ -1,0 +1,172 @@
+<!-- Page: YouTube -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percer sur YouTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background: #ff5555;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #000000;
+            font-size: 1.4rem;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .step {
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .card {
+            position: relative;
+            padding: 15px;
+            background: #ffffff;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            
+            cursor: pointer;
+        }
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .card p {
+            display: none;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .card .toggle {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1rem;
+            color: #ff5555;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ff8787;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function toggleDescription(button) {
+            const description = button.previousElementSibling;
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                button.textContent = "▼";
+            } else {
+                description.style.display = "block";
+                button.textContent = "▲";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Percer sur YouTube</h1>
+    </header>
+    <div class="container">
+        <div class="step">
+            <h2>Étape 1 : Trouver une niche</h2>
+            <p>Pour réussir sur YouTube, il est essentiel de trouver une niche qui vous passionne et qui attire une audience spécifique. Une niche bien définie vous permet de créer du contenu ciblé et engageant.</p>
+            <h3>Créer un compte, abonnez vous aux chaine de la meme niche , likez commentez les videos des autres comme ca youtube saura que vous n'etes pas un bot et surtout ne rien poster la premiere semaine au minimum.</h3>
+        </div>
+        <div class="step">
+            <h2>Étape 2 : Gagner des abonnés</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Méthode  normale</h3>
+                    <p>La frero y'a pas de triche, t'es obligé de publier régulièrement et demander aux gens de s'abonner.
+         Petit conseil les shorts rapportent des abonnés rapidement, t'as bien vu TiboinShape .</p>
+                    
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+                </div>
+                <div class="card">
+                    <h3>Gratuit et rapide</h3>
+                    <p>les lives "Fait ta Pub".
+                sur ces lives tu peux faire un echange d'abonnement (je m'abonne a ta chaine si tu t'abonne a la mienne), je like si tu likes...
+                et y'a une master-class le 10/10.
+                10/10: tu t'abonnes avec 10 comptes a une chaine et le mec a qui appartient la chaine fait pareil.Voila tu gagnes 10 abonnés easy sans te parler des 20/20, 50/50 (oui ca existe).Y'a des gens qui ont 50 faux comptes!
+                en une heure tu peux te faire 100 abonnés gratos mais inactifs.
+                    </p>
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+
+                </div>
+                <div class="card">
+                    <h3>Rapide et payante</h3>
+                    <p>
+                        Achetez des abonnés Youtube. 
+                        Investissez dans des publicités YouTube pour toucher un public plus large en peu de temps.</p>
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <h2>Étape 3 : Avoir ses 4000h de visionnage</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Créer des vidéos longues</h3>
+                    <p>Produisez des vidéos plus longues et engageantes pour augmenter le temps de visionnage.</p>
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+                </div>
+                <div class="card">
+                    <h3>Lives réguliers</h3>
+                    <p>Organisez des lives pour booster le temps de visionnage en temps réel.</p>
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+                </div>
+                <div class="card">
+                    <h3>Partage stratégique</h3>
+                    <p>Diffusez vos vidéos sur plusieurs plateformes pour maximiser leur exposition.</p>
+                    <button class="toggle" onclick="toggleDescription(this)">▼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 - MegaOne. Tous droits réservés. | <a href="#">Contactez-nous</a></p>
+    </footer>
+</body>
+</html>
+   
